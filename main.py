@@ -4,6 +4,8 @@ import statistics
 import math
 import random
 
+# plik z danymi na gicie jest w xls, a nie w csv  
+# ponieważ csv zajmowal 39MB 
 data= pd.read_csv('projekt2_dane2.csv', sep=';')
 data2 = data.rating.to_list()
 data3 = data.movie.to_list()
